@@ -566,6 +566,7 @@ responsive
     display: block; /* Ensure block display */
     margin-left: auto; /* Center horizontally */
     margin-right: auto; /* Center horizontally */
+    margin-bottom: -40px;
   }
 
   .section-text {
