@@ -272,33 +272,39 @@ Blue: #729bbf
     line-height: 1.6; /* Improve readability with line spacing */
   }
   
-  /* Three-Part Section in Column Format */
-  .three-part-section {
-    display: block; /* Change to block layout to stack sections */
-    padding: 40px 0; /* Add spacing around the section */
-    background-color: white; /* Light background color */
-  }
-  
-  .part {
-    display: flex;
-    align-items: center; /* Center icon and content vertically */
-    width: 100%; /* Make each part take up the full width of the page */
-    background-color: #ffffff; /* White background for each part */
-    padding: 20px; /* Add padding inside each part */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-    border-radius: 8px; /* Rounded corners for each part */
-    margin-bottom: 20px; /* Add space between each section */
-  }
-  
-  .part-icon {
-    max-width: 10%; /* Icon takes up 10% of the part width */
-    margin-right: 20px; /* Space between icon and content */
-  }
-  
-  .part-content {
-    text-align: left; /* Align text to the left */
-    width: 90%; /* Ensure the content takes up the remaining width */
-  }
+/* Three-Part Section */
+.three-part-section {
+  display: flex;
+  flex-direction: column; /* Stack sections vertically */
+  align-items: center; /* Center horizontally */
+  padding: 20px 0; /* Adjust padding */
+  background-color: white; /* Light background color */
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.part {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center content horizontally */
+  background-color: #ffffff; /* White background for each part */
+  padding: 20px; /* Add padding inside each part */
+  border-radius: 8px; /* Rounded corners for each part */
+  margin-bottom: 20px; /* Add space between each section */
+  width: 90%; /* Ensure parts fit within container */
+  max-width: 800px; /* Optional: Limit max-width */
+}
+
+.part-icon {
+  max-width: 30%; /* Adjust icon size for mobile */
+  margin-bottom: 10px; /* Space between icon and text */
+}
+
+.part-content {
+  text-align: center; /* Center text */
+  width: 100%; /* Full width */
+}
+
   
   .part h3 {
     font-size: 20px; /* Heading font size */
