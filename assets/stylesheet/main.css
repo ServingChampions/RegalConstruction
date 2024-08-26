@@ -285,8 +285,7 @@ Blue: #729bbf
 
 .part {
   display: flex;
-  flex-direction: column; /* Stack content vertically */
-  align-items: center; /* Center content horizontally */
+  align-items: center; /* Center icon and content vertically */
   background-color: #ffffff; /* White background for each part */
   padding: 20px; /* Add padding inside each part */
   border-radius: 8px; /* Rounded corners for each part */
@@ -296,13 +295,13 @@ Blue: #729bbf
 }
 
 .part-icon {
-  max-width: 30%; /* Adjust icon size for mobile */
-  margin-bottom: 10px; /* Space between icon and text */
+  max-width: 30%; /* Adjust icon size */
+  margin-right: 20px; /* Space between icon and text */
 }
 
 .part-content {
-  text-align: center; /* Center text */
-  width: 100%; /* Full width */
+  text-align: left; /* Align text to the left */
+  width: 70%; /* Adjust width to fit with icon */
 }
 
   
@@ -449,6 +448,7 @@ connect
 responsive
   ========================================
 */
+
 /* Responsive Styles for Header */
 @media (max-width: 768px) {
   .header-container {
