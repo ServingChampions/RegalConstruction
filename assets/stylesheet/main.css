@@ -224,27 +224,31 @@ Blue: #729bbf
   */
   
   /* Video Section */
-  .video-section {
-    position: relative;
-    width: 90%; /* Set the video section width to 90% */
-    margin: 0 auto; /* Center the section horizontally */
-    overflow: hidden; /* Hide overflow to prevent any unwanted scroll bars */
-  }
-  
-  .video-overlay video {
-    width: 100%; /* Make the video full width within the 90% container */
-    height: auto; /* Keep the aspect ratio */
-  }
-  
-  .video-overlay .overlay-text {
-    position: absolute;
-    top: 50%; /* Position the text vertically in the middle */
-    left: 50%; /* Position the text horizontally in the middle */
-    transform: translate(-50%, -50%); /* Center the text */
-    text-align: center; /* Center-align the text */
-    white-space: nowrap; /* Prevent text from wrapping to a new line */
-    overflow: visible; /* Ensure overflow is visible to prevent clipping */
-  }
+/* Video Section */
+.video-section {
+  position: relative;
+  width: 90%; /* Full width */
+  margin: 0 auto; /* Center horizontally */
+  overflow: hidden; /* Hide overflow */
+}
+
+.video-overlay video {
+  width: 100%; /* Full width */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 100vh; /* Ensure video doesn't exceed viewport height */
+}
+
+.video-overlay .overlay-text {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Perfect centering */
+  text-align: center; /* Center-align the text */
+  white-space: normal; /* Allow text to wrap */
+  overflow: hidden; /* Hide overflow */
+  padding: 0 10px; /* Add padding to prevent text from touching edges */
+  width: 90%; /* Adjust width to fit within the screen */
+}
   
   .video-overlay .overlay-text h2 {
     color: white; /* Force white text color */
@@ -531,9 +535,10 @@ responsive
 @media (max-width: 768px) {
   /* Video Section */
   .video-section {
-    width: 100%; /* Full width on mobile */
-    margin: 0; /* Remove horizontal margin */
-    padding: 0; /* Remove padding if any */
+    position: relative;
+    width: 100%; /* Full width */
+    margin: 0 auto; /* Center horizontally */
+    overflow: hidden; /* Hide overflow */
   }
 
   .video-overlay video {
