@@ -645,6 +645,110 @@ connect
 */
 
 
+/* Contact Information Section */
+.contact-info {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info p {
+  font-size: 14px; /* Smaller text */
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.contact-info strong {
+  font-weight: bold; /* Bold for the labels */
+  color: #333; /* Dark color for contrast */
+}
+
+/* Info Section */
+.info-section {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.info-section h2 {
+  font-size: 18px; /* Smaller text size for better readability */
+  color: #333; /* Black text color */
+  margin-bottom: 15px; /* Space between headings */
+  text-align: center;
+  line-height: 1.4; /* Improved line spacing for readability */
+}
+
+
+
+/* Contact Form Section */
+.contact-form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #729bbf;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: white; /* Primary color */
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: white; /* Label color */
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: white; /* Primary color */
+  color: #729bbf;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-form button:hover {
+  background-color: whitesmoke; /* Slightly darker shade of primary color */
+}
+
+.contact-form button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 132, 255, 0.3); /* Focus state */
+}
+
+
+
+
 
 /*
   ========================================
@@ -922,4 +1026,80 @@ responsive
       margin-bottom: 15px;
     }  
 
+      .regal-difference p, .elevate-lifestyle p, .contact-info p {
+    font-size: 1em; /* Adjust font size for smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+  
+
+ /* Contact Form */
+
+ .cover-photo {
+  padding-top: 0; /* Remove extra padding if needed */
+}
+
+.cover-photo img {
+  width: 100%; /* Full width of the screen */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Regal Difference and Elevate Lifestyle sections */
+.regal-difference, .elevate-lifestyle {
+  font-size: 1em; /* Adjust font size for smaller screens */
+  padding: 15px; /* Reduced padding */
+}
+
+/* Contact Information section */
+.contact-info {
+  font-size: 0.9em; /* Slightly smaller font size */
+  padding: 15px; /* Reduced padding */
+}
+
+/* Contact Form */
+
+
+}
+
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .contact-form {
+      padding: 15px;
+  }
+  
+  .contact-form label {
+      margin-bottom: 6px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+      padding: 8px;
+  }
+  
+  .contact-form button {
+      padding: 12px;
+      font-size: 14px;
+  }
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .info-section {
+      padding: 15px;
+  }
+  
+  .info-section h2 {
+      font-size: 16px; /* Adjust text size for mobile */
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-info {
+      margin: 20px auto;
+      padding: 15px;
+  }
+
+  .contact-info p {
+      font-size: 13px; /* Slightly smaller text on mobile */
+  }
 }
