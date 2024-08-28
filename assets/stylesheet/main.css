@@ -528,27 +528,29 @@ process
 
 .cover-photo img {
   width: 100%;
-  height: 100%;
+  height: auto; /* Maintain aspect ratio */
   object-fit: cover; /* Ensures the image covers the entire section without distortion */
 }
 
 /* Styling for the wider three-part section */
 .wider-three-part-section {
-  width: 90%; /* Increase the width to make it slightly wider */
+  width: 80%; /* Adjust to ensure it feels centered */
+  max-width: 1200px; /* Limit the maximum width */
   margin: 0 auto; /* Center the section on the page */
-  padding: 20px 0;
+  padding: 20px 0; /* Vertical padding for spacing */
 }
 
 .wider-three-part-section .part {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  justify-content: center; /* Center content within each part */
 }
 
 .wider-three-part-section .part-icon {
   width: 100px; /* Adjust as needed */
   height: auto;
-  margin-right: 20px;
+  margin-right: 20px; /* Space between icon and text */
 }
 
 .wider-three-part-section .part-content {
