@@ -1,30 +1,174 @@
-<html>
-  <head>
-  <title>My Now Amazing Webpage</title>
-  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-  </head>
-  <body>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>Regal Construction Inc.</title>
+  <link rel="shortcut icon" href="assets/logocropped.jpeg">
+  <link rel="stylesheet" type="text/css" href="assets/stylesheet/main.css">
+  <meta charset="utf-8">
+  <meta name="keywords" content="Regal Construction Home Page">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <div class="product-carousel">
-      <div class="slick-carousel">
-        <div><img src="https://github.com/regalconstruction/anaheimhills/blob/main/anaheimhills/View_12%20-%20Photo.jpeg?raw=true" alt="Slide 1"></div>
-        <div><img src="https://github.com/regalconstruction/anaheimhills/blob/main/anaheimhills/View_15%20-%20Photo.jpeg?raw=true" alt="Slide 2"></div>
-        <div><img src="https://github.com/regalconstruction/anaheimhills/blob/main/anaheimhills/View_15%20-%20Photo.jpeg?raw=true" alt="Slide 3"></div>
+  <!-- Slick Carousel CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Slick Carousel JS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  
+  <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+</head>
+
+<body>
+
+  <header class="primary-header">
+    <div class="header-container">
+      <a href="index.html">
+        <img src="assets/logofullblue.png" alt="Regal Construction Logo" class="headerlogo">
+      </a>
+      <button class="hamburger" aria-label="Toggle navigation">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      <nav class="primary-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="team.html">Regal Team</a></li>
+          <li><a href="process.html">Our Process</a></li>
+          <li><a href="press.html">Press</a></li>
+          <li><a href="work.html">Our Work</a></li>
+          <li><a href="connect.html">Connect</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="cover-photo">
+    <img src="assets/ourwork/workcover.jpg" alt="Cover Photo">
+  </section>
+
+  <!-- Introduction Section -->
+  <section class="intro-section">
+    <h2>Our Projects</h2>
+    <p>Explore our featured projects where luxury meets precision and innovation blends with tradition. These exceptional creations reflect our commitment to bringing your dreams to life.</p>
+  </section>
+
+ <!-- PRODUCT START -->
+<section class="product-section">
+  <!-- Left Side: Image Carousel -->
+  <div class="product-carousel">
+    <div class="slick-carousel">
+      <div><img src="https://github.com/regalconstruction/anaheimhills/blob/main/anaheimhills/View_12%20-%20Photo.jpeg?raw=true" alt="Slide 1"></div>
+      <div><img src="https://github.com/regalconstruction/anaheimhills/blob/main/anaheimhills/View_15%20-%20Photo.jpeg?raw=true" alt="Slide 2"></div>
+      <div><img src="https://github.com/regalconstruction/anaheimhills/blob/main/anaheimhills/View_15%20-%20Photo.jpeg?raw=true" alt="Slide 3"></div>
+    </div>
+  </div>
+
+  <!-- Right Side: Product Details -->
+  <div class="product-details">
+    <h1 class="product-title">Anaheim Hills</h1>
+    <p class="product-summary">
+      Spanish inspired home nestled into the hills on an acre lot. 
+      New construction project with a remodeled hardscape to tie in 
+      the Spanish hacienda style.
+    </p>
+    <h3>Project Description:</h3>
+    <ul class="product-description">
+      <li>Square Footage: 4,452sqft</li>
+      <li>Location: Anaheim Hills, CA</li>
+      <li>Specs: 4 Bedrooms, 3 ½ Baths, Office, Detached Casita, Garage, Pool and Sports Court</li>
+      <li>Design Team:
+        <ul>
+          <li>Architect - Jason Richart</li>
+          <li>Landscape Designer - David Pederson</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
+<!-- PRODUCT END -->
+
+
+  <section class="subscribe-section">
+    <p>To stay up to date on all of the news and events at Regal Custom Homes, please provide us with the following information:</p>
+    <form class="subscribe-form" action="mailto:your-email@example.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <section class="socmed">
+    <a href="https://www.facebook.com/RegalConstructionCustomHomes/" target="_blank">
+      <img src="assets/fb.png" alt="Facebook">
+    </a>
+    <a href="https://www.instagram.com/regalconstructioncustomhomes" target="_blank">
+      <img src="assets/insta.png" alt="Instagram">
+    </a>
+    <a href="mailto:example@email.com">
+      <img src="assets/email.png" alt="Email">
+    </a>
+    <a href="tel:+1234567890">
+      <img src="assets/phone.png" alt="Phone">
+    </a>
+  </section>
+
+  <section class="copyright-section">
+    <hr class="thin-grey-line">
+    <p>© 2024 Regal Construction Custom Homes. License #885896, licensed, bonded, and insured.</p>
+  </section>
+
+  <footer class="primary-footer">
+    <div class="footer-container">
+      <div class="header-container">
+        <a href="index.html">
+          <img src="assets/logofullblue.png" alt="Regal Construction Logo" class="headerlogo">
+        </a>
+        <button class="footer-hamburger" aria-label="Toggle footer navigation">
+          <span class="footer-hamburger-line"></span>
+          <span class="footer-hamburger-line"></span>
+          <span class="footer-hamburger-line"></span>
+        </button>
+        <nav class="primary-nav footer-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="team.html">Regal Team</a></li>
+            <li><a href="process.html">Our Process</a></li>
+            <li><a href="press.html">Press</a></li>
+            <li><a href="work.html">Our Work</a></li>
+            <li><a href="connect.html">Connect</a></li>
+          </ul>
+        </nav>
       </div>
     </div>
+  </footer>
 
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <div class="sc-footer">
+    <a href="https://servingchampions.com" target="_blank">
+      <img src="assets/sclogo.png" alt="Serving Champions LLC Logo">
+      Website Created by Serving Champions LLC
+    </a>
+  </div>
 
+  <script src="script.js"></script>
+
+  <!-- Slick JavaScript -->
   <script type="text/javascript">
     $(document).ready(function(){
-      $('.your-class').slick({
-        setting-name: setting-value
+      $('.slick-carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
       });
     });
   </script>
 
-  </body>
-</html>
+  
+</body>
+</html
