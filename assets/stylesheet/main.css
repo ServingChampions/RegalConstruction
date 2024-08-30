@@ -1125,3 +1125,132 @@ responsive
       font-size: 13px; /* Slightly smaller text on mobile */
   }
 }
+
+
+/*
+  ========================================
+work
+  ========================================
+*/
+
+/* Introduction Section Styling */
+.intro-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.intro-section h2 {
+  font-size: 36px; /* Increased font size */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase; /* Makes the text uppercase */
+  letter-spacing: 2px; /* Adds space between letters */
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #729bbf; /* Adds an underline effect */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+}
+
+.intro-section p {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Product Section Styling */
+.product-section {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 40px auto; /* Center the section */
+  max-width: 1200px; /* Limit max width */
+}
+
+/* Product Carousel Styling */
+.product-carousel {
+  flex: 1;
+  margin-right: 20px;
+  max-width: 45%; /* Prevent the carousel from being too wide */
+}
+
+.slick-carousel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Add space between images */
+}
+
+.slick-carousel img {
+  width: 100%;
+  max-height: 300px; /* Set a more reasonable height */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Product Details Styling */
+.product-details {
+  flex: 1;
+  max-width: 45%; /* Prevent details from being too wide */
+}
+
+.product-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.product-summary {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.product-description {
+  list-style: none;
+  padding-left: 0;
+}
+
+.product-description li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.product-description ul {
+  padding-left: 20px;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+
+  .product-section {
+    display: block; /* Switch to block layout on mobile */
+  }
+
+  .product-carousel,
+  .product-details {
+    max-width: 100%; /* Full width on smaller screens */
+    margin: 0 auto 20px; /* Add margin between sections */
+  }
+
+  .product-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-carousel {
+    margin-right: 0;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+
+  .product-details {
+    max-width: 100%;
+  }
+}
+
