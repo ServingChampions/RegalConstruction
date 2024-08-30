@@ -1003,35 +1003,22 @@ responsive
 @media (max-width: 768px) {
   /* Video Section */
   .video-section {
-    position: relative;
-    width: 75%; /* Full width */
-    margin: 0 auto; /* Center horizontally */
-    overflow: hidden; /* Hide overflow */
+    width: 100%;
     padding-top: 10px;
   }
 
   .video-overlay video {
-    width: 100%; /* Full width */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    height: auto;
   }
 
-  .video-overlay .overlay-text {
-    position: absolute;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Perfect centering */
-    text-align: center; /* Center-align the text */
-    white-space: normal; /* Allow text to wrap */
-    overflow: hidden; /* Hide any overflow */
-    padding: 0 10px; /* Add padding to prevent text from touching edges */
-    width: 90%; /* Adjust width to fit within the screen */
+  .overlay-text {
+    width: 90%;
   }
 
-  .video-overlay .overlay-text h2 {
-    font-size: 20px; /* Adjust font size for mobile */
-    line-height: 1.3; /* Adjust line height for readability */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional shadow for better contrast */
-    margin: 0; /* Remove margin if needed */
+  .overlay-text h2 {
+    font-size: 20px;
+    line-height: 1.3;
   }
 
   /* Section 1 */
