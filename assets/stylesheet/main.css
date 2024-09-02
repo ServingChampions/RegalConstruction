@@ -415,15 +415,6 @@ Blue: #729bbf
   background-color: #577d9c; /* Slightly darker shade on hover */
 }
 
-
-/*
-  ========================================
-about
-  ========================================
-*/
-
-
-
 /*
   ========================================
 team
@@ -684,7 +675,7 @@ work
   text-align: center;
   padding: 40px 20px;
   background-color: #ffffff;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .intro-section h2 {
@@ -1297,5 +1288,149 @@ responsive
   .product-carousel {
     margin-right: 0;
     margin-bottom: 20px;
+  }
+}
+
+
+
+
+/*
+  ========================================
+workpt2!
+  ========================================
+*/
+
+/* Custom Home Section */
+.customh-section {
+  text-align: center;
+  padding: 5px 30px;
+}
+
+/* Make the entire content clickable */
+.customh-link {
+  text-decoration: none; /* Remove underline from the link */
+  color: inherit; /* Inherit the text color to avoid default link colors */
+}
+
+.customh-content {
+  max-width: 800px; /* Limit the width of the entire content */
+  margin: 0 auto; /* Center the content */
+  padding: 20px; /* Add padding for spacing */
+  background-color: #f8f8f8; /* Light background to separate content */
+  border-radius: 10px; /* Rounded corners for a cleaner look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  cursor: pointer; /* Pointer cursor to indicate it's clickable */
+}
+
+.customh-content img {
+  max-width: 90%; /* Ensure the image doesn't exceed the container width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.customh-text h2 {
+  font-size: 2.2em;
+  color: #729bbf;
+  margin: 0;
+}
+
+.customh-text p {
+  font-size: 1.2em;
+  color: black;
+  margin-top: 10px;
+}
+
+
+
+/*
+  ========================================
+individual houses
+  ========================================
+*/
+
+.project-header {
+  text-align: center;
+  padding: 20px;
+}
+
+.cover-photo {
+  width: 100%;
+  max-width: 900px; /* Ensure the cover photo isn’t too large */
+  margin: 0 auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.project-title {
+  font-size: 2.5em;
+  margin-top: 20px;
+  color: #729bbf; /* Regal Green */
+}
+
+.project-location {
+  font-size: 1.2em;
+  color: black; 
+  margin-bottom: 20px;
+}
+
+.project-description {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: whitesmoke; /* Light Beige */
+  border-radius: 8px;
+}
+
+.project-description h3 {
+  color: #729bbf;
+}
+
+.project-description ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.project-description ul li {
+  padding: 5px 0;
+}
+
+/* Fancy Masonry Gallery */
+.gallery {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.gallery h3 {
+  font-size: 1.8em;
+  color: #729bbf;
+  margin-bottom: 20px;
+}
+
+.masonry-grid {
+  column-count: 3;
+  column-gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.masonry-grid img {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  display: block;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  break-inside: avoid; /* Prevent image from breaking columns */
+}
+
+@media (max-width: 768px) {
+  .masonry-grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .masonry-grid {
+    column-count: 1;
   }
 }
