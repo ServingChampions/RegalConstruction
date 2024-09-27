@@ -123,6 +123,10 @@ Blue: #729bbf
   text-align: center; /* Center content */
 }
 
+footer img{
+  display: none;
+}
+
 .footer-container {
   display: flex;
   align-items: center;
