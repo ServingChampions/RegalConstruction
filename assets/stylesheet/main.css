@@ -115,47 +115,31 @@ Blue: #729bbf
   color: #ffffff; /* Hover color */
 }
 
-/* Footer Styling */
-.primary-footer {
-  background-color: #729bbf; /* Background color */
-  color: white;
-  padding: 20px 0; /* Vertical padding */
-  text-align: center; /* Center content */
+/* Footer Contact Info Styling */
+.footer-contact-info {
+  text-align: center;
+  margin-top: 20px;
+  background-color: #729bbf; /* Regal's primary color */
+  padding: 20px;
+  border-radius: 8px; /* Optional: Add rounded corners */
 }
 
-footer img{
-  display: none;
+.footer-contact-info p {
+  margin: 5px 0;
+  font-size: 1em;
+  color: #fff; /* White text */
 }
 
-.footer-container {
-  display: flex;
-  align-items: center;
-  justify-content: center; /* Center horizontally */
-  position: relative;
+.footer-contact-info a {
+  color: #fff; /* White text */
+  text-decoration: none;
 }
 
-.footer-nav ul {
-  list-style: none; /* Remove default list styling */
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
-  display: flex; /* Horizontal alignment */
-  justify-content: center; /* Center items */
+.footer-contact-info a:hover {
+  text-decoration: underline;
 }
 
-.footer-nav li {
-  margin: 0 15px; /* Space between items */
-}
 
-.footer-nav a {
-  color: white; /* Link color */
-  text-decoration: none; /* Remove underline */
-  font-family: 'Lato', sans-serif; /* Font style */
-  font-weight: 300; /* Light font weight */
-}
-
-.footer-nav a:hover {
-  color: #ffffff; /* Hover color */
-}
 
 /* Hamburger Button Styles */
 .hamburger, .footer-hamburger {
@@ -225,7 +209,7 @@ footer img{
   
   .copyright-section {
     text-align: center; /* Center the text */
-    padding: 20px 0; /* Add some padding */
+    padding: 7px 0; /* Add some padding */
     font-size: 12px; /* Smaller font size */
     color: #666; /* Grey text color */
   }
@@ -291,7 +275,6 @@ footer img{
   }
   
   .section-text {
-    font-family: 'Lato', sans-serif; /* Ensure consistency with the rest of the site */
     color: #333; /* Darker text color for readability */
     font-size: 16px; /* Adjust the font size */
     line-height: 1.6; /* Improve readability with line spacing */
@@ -333,7 +316,7 @@ footer img{
   .part h3 {
     font-size: 20px; /* Heading font size */
     margin-bottom: 10px; /* Space below heading */
-    color: #333; /* Dark text color */
+    color: #729bbf; /* Dark text color */
   }
   
   .part p {
@@ -368,7 +351,6 @@ footer img{
 .closing-section p {
   font-size: 28px; /* Slightly larger text */
   color: white; /* White text to contrast with the background */
-  font-family: 'Lato', sans-serif; /* Use a clean font */
   font-weight: 300; /* Use a lighter font weight for a clean look */
   margin: 0; /* Remove default margin */
 }
@@ -384,7 +366,6 @@ footer img{
 .subscribe-section p {
   font-size: 16px; /* Smaller text for the message */
   color: #333; /* Darker text color for readability */
-  font-family: 'Lato', sans-serif; /* Clean font */
   margin-bottom: 20px; /* Space below the paragraph */
 }
 
@@ -535,17 +516,43 @@ process
 
 /* Styling for the cover photo section */
 .cover-photo {
-  width: 100%; /* Full width of the screen */
-  height: auto; /* Maintain aspect ratio */
-  object-fit: cover; /* Ensure the image covers the entire area without distortion */
-  padding-top: 3px;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
 }
 
 .cover-photo img {
+  padding-top: 10px;
   width: 100%;
-  height: auto; /* Maintain aspect ratio */
-  object-fit: cover; /* Ensures the image covers the entire section without distortion */
+  height: 100%;
+  object-fit: cover;
 }
+
+/* Styling for the transparent text with an outline */
+.cover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%; /* Use a percentage for flexibility */
+  max-width: 800px; /* Set a maximum width */
+}
+
+.cover-text h1 {
+  font-size: 40px; /* Adjust size as needed */
+  color: transparent; /* Make the letters themselves transparent */
+  -webkit-text-stroke: 2px white; /* Outline of the text */
+  font-weight: bold;
+  font-family: 'Wire One', sans-serif;
+  padding: 20px;
+  line-height: 1.2; /* Control line height for better spacing */
+}
+
+
+
+
 
 /* Styling for the wider three-part section */
 .wider-three-part-section {
@@ -610,6 +617,23 @@ process
 press
   ========================================
 */
+
+.pcover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.pcover-text h1 {
+  font-size: 5em; /* Adjust size as needed */
+  color: transparent; /* Make the letters themselves transparent */
+  -webkit-text-stroke: 2px white; /* Outline of the text */
+  font-weight: bold;
+  font-family: 'Wire One', sans-serif;
+  padding: 20px;
+}
 
 .excerpt-intro {
   padding: 20px;
@@ -697,9 +721,10 @@ work
 }
 
 .intro-section p {
-  font-size: 18px;
+  font-size: 16px;
   color: #666;
 }
+
 
 /* Product Section Styling */
 .product-section {
@@ -708,7 +733,6 @@ work
   justify-content: space-between;
   align-items: flex-start;
   padding: 20px;
-  padding-top: 20px;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -720,7 +744,7 @@ work
 .product-carousel {
   flex: 1;
   margin-right: 20px;
-  max-width: 45%;
+  max-width: 50%; /* Increase max-width to make the carousel wider */
 }
 
 .slick-carousel {
@@ -731,8 +755,8 @@ work
 
 .slick-carousel img {
   width: 100%;
-  max-height: 300px;
-  object-fit: cover;
+  max-height: 400px; /* Increase max-height to give the images more space */
+  object-fit: contain; /* Keep aspect ratio without cropping */
   border-radius: 8px;
 }
 
@@ -787,6 +811,7 @@ work
 .slick-prev:before, .slick-next:before {
   color: #fff;
 }
+
 
 
 /* Coming Soon Section */
@@ -1017,24 +1042,28 @@ responsive
 /* Mobile Responsive Styles for home */
 @media (max-width: 768px) {
   /* Video Section */
-  .video-section {
-    width: 100%;
-    padding-top: 10px;
+  @media (max-width: 768px) {
+    /* Video Section */
+    .video-section {
+      width: 100%;
+      padding-top: 10px;
+    }
+  
+    .video-overlay video {
+      width: 100%;
+      height: auto;
+    }
+  
+    .video-overlay .overlay-text {
+      width: 90%;
+    }
+  
+    .video-overlay .overlay-text h2 {
+      font-size: 30px; /* This should now work as intended */
+      line-height: 1.3;
+    }
   }
-
-  .video-overlay video {
-    width: 100%;
-    height: auto;
-  }
-
-  .overlay-text {
-    width: 90%;
-  }
-
-  .overlay-text h2 {
-    font-size: 20px;
-    line-height: 1.3;
-  }
+  
 
   /* Section 1 */
   .section-1 {
@@ -1197,6 +1226,26 @@ responsive
     font-size: 1em; /* Adjust font size for smaller screens */
     padding: 10px; /* Adjust padding for smaller screens */
   }
+
+  .cover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%; /* Use a percentage for flexibility */
+    max-width: 800px; /* Set a maximum width */
+  }
+  
+  .cover-text h1 {
+    font-size: 40px; /* Adjust size as needed */
+    color: transparent; /* Make the letters themselves transparent */
+    -webkit-text-stroke: 2px white; /* Outline of the text */
+    font-weight: bold;
+    font-family: 'Wire One', sans-serif;
+    padding: 20px;
+    line-height: 1.2; /* Control line height for better spacing */
+  }
   
 
  /* Contact Form */
@@ -1292,149 +1341,5 @@ responsive
   .product-carousel {
     margin-right: 0;
     margin-bottom: 20px;
-  }
-}
-
-
-
-
-/*
-  ========================================
-workpt2!
-  ========================================
-*/
-
-/* Custom Home Section */
-.customh-section {
-  text-align: center;
-  padding: 5px 30px;
-}
-
-/* Make the entire content clickable */
-.customh-link {
-  text-decoration: none; /* Remove underline from the link */
-  color: inherit; /* Inherit the text color to avoid default link colors */
-}
-
-.customh-content {
-  max-width: 800px; /* Limit the width of the entire content */
-  margin: 0 auto; /* Center the content */
-  padding: 20px; /* Add padding for spacing */
-  background-color: #f8f8f8; /* Light background to separate content */
-  border-radius: 10px; /* Rounded corners for a cleaner look */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  cursor: pointer; /* Pointer cursor to indicate it's clickable */
-}
-
-.customh-content img {
-  max-width: 90%; /* Ensure the image doesn't exceed the container width */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-.customh-text h2 {
-  font-size: 2.2em;
-  color: #729bbf;
-  margin: 0;
-}
-
-.customh-text p {
-  font-size: 1.2em;
-  color: black;
-  margin-top: 10px;
-}
-
-
-
-/*
-  ========================================
-individual houses
-  ========================================
-*/
-
-.project-header {
-  text-align: center;
-  padding: 20px;
-}
-
-.cover-photo {
-  width: 100%;
-  max-width: 900px; /* Ensure the cover photo isn’t too large */
-  margin: 0 auto;
-  display: block;
-  border-radius: 8px;
-}
-
-.project-title {
-  font-size: 2.5em;
-  margin-top: 20px;
-  color: #729bbf; /* Regal Green */
-}
-
-.project-location {
-  font-size: 1.2em;
-  color: black; 
-  margin-bottom: 20px;
-}
-
-.project-description {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: whitesmoke; /* Light Beige */
-  border-radius: 8px;
-}
-
-.project-description h3 {
-  color: #729bbf;
-}
-
-.project-description ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.project-description ul li {
-  padding: 5px 0;
-}
-
-/* Fancy Masonry Gallery */
-.gallery {
-  text-align: center;
-  margin-top: 40px;
-}
-
-.gallery h3 {
-  font-size: 1.8em;
-  color: #729bbf;
-  margin-bottom: 20px;
-}
-
-.masonry-grid {
-  column-count: 3;
-  column-gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.masonry-grid img {
-  width: 100%;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  display: block;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  break-inside: avoid; /* Prevent image from breaking columns */
-}
-
-@media (max-width: 768px) {
-  .masonry-grid {
-    column-count: 2;
-  }
-}
-
-@media (max-width: 480px) {
-  .masonry-grid {
-    column-count: 1;
   }
 }
