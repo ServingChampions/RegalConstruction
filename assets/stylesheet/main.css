@@ -541,17 +541,12 @@ process
 }
 
 .cover-text h1 {
-  font-size: 40px; /* Adjust size as needed */
-  color: transparent; /* Make the letters themselves transparent */
-  -webkit-text-stroke: 2px white; /* Outline of the text */
-  font-weight: bold;
-  font-family: 'Wire One', sans-serif;
-  padding: 20px;
-  line-height: 1.2; /* Control line height for better spacing */
+  color: white; /* Force white text color */
+  font-size: 40px; /* Force large text size */
+  font-weight: bold; /* Force bold text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional shadow for better contrast */
+  line-height: 1.2; /* Adjust line-height to give more vertical space */
 }
-
-
-
 
 
 /* Styling for the wider three-part section */
@@ -627,12 +622,11 @@ press
 }
 
 .pcover-text h1 {
-  font-size: 5em; /* Adjust size as needed */
-  color: transparent; /* Make the letters themselves transparent */
-  -webkit-text-stroke: 2px white; /* Outline of the text */
-  font-weight: bold;
-  font-family: 'Wire One', sans-serif;
-  padding: 20px;
+  color: white; /* Force white text color */
+  font-size: 80px; /* Force large text size */
+  font-weight: bold; /* Force bold text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional shadow for better contrast */
+  line-height: 1.2; /* Adjust line-height to give more vertical space */
 }
 
 .excerpt-intro {
@@ -1238,13 +1232,13 @@ responsive
   }
   
   .cover-text h1 {
-    font-size: 40px; /* Adjust size as needed */
-    color: transparent; /* Make the letters themselves transparent */
-    -webkit-text-stroke: 2px white; /* Outline of the text */
-    font-weight: bold;
-    font-family: 'Wire One', sans-serif;
+    font-size: 15px; /* Adjust size as needed */
     padding: 20px;
     line-height: 1.2; /* Control line height for better spacing */
+  }
+
+  .pcover-text h1 {
+    font-size: 50px; /* Force large text size */
   }
   
 
