@@ -41,34 +41,22 @@ Blue: #729bbf
     margin: 0 5px;
   }
   
-  h1, h2, h3, h4 {
-    color: #729bbf;
+  h1 {
+    font-size: 40px;
+    color: #729bbf; /* Primary color */
+  }
+
+  h2, h3, h4, h5 {
+    font-size: 30px;
+    color: #729bbf; /* Primary color */
   }
   
-  h1 {
-    font-size: 25px;
-    line-height: 44px;
-    text-transform: capitalize;
-  }
-  h2 {
-    font-size: 20px;
-    line-height: 44px;
-  }
-  h3 {
-    font-size: 18px;
-  }
-  h4 {
-    font-size: 16px;
-  }
-  h5 {
-    font-size: 14px;
-    font-weight: 400;
-    text-transform: uppercase;
-  }
+
   p {
     font-size: 15px;
     font-weight: 381;
     padding: 5px 0;
+    color: black
   }
   
   /* Header Styling */
@@ -210,8 +198,6 @@ Blue: #729bbf
   .copyright-section {
     text-align: center; /* Center the text */
     padding: 7px 0; /* Add some padding */
-    font-size: 12px; /* Smaller font size */
-    color: #666; /* Grey text color */
   }
   
   .thin-grey-line {
@@ -275,8 +261,6 @@ Blue: #729bbf
   }
   
   .section-text {
-    color: #333; /* Darker text color for readability */
-    font-size: 16px; /* Adjust the font size */
     line-height: 1.6; /* Improve readability with line spacing */
   }
   
@@ -314,15 +298,11 @@ Blue: #729bbf
 
   
   .part h3 {
-    font-size: 20px; /* Heading font size */
     margin-bottom: 10px; /* Space below heading */
-    color: #729bbf; /* Dark text color */
   }
   
   .part p {
-    font-size: 16px; /* Paragraph font size */
     margin-bottom: 15px; /* Space below paragraph */
-    color: #666; /* Slightly lighter text color */
   }
 
 .part-button {
@@ -364,8 +344,6 @@ Blue: #729bbf
 }
 
 .subscribe-section p {
-  font-size: 16px; /* Smaller text for the message */
-  color: #333; /* Darker text color for readability */
   margin-bottom: 20px; /* Space below the paragraph */
 }
 
@@ -414,14 +392,10 @@ team
 }
 
 .team-intro h1 {
-  font-size: 2.5em;
-  color: #729bbf; /* Primary color */
   margin-bottom: 20px;
 }
 
 .team-intro p {
-  font-size: 1.2em;
-  color: #555; /* Gray text */
   max-width: 800px;
   margin: 0 auto;
 }
@@ -430,6 +404,8 @@ team
 .team-section {
   display: flex;
   justify-content: space-around; /* Space the items evenly */
+  flex-wrap: nowrap; /* Prevent items from wrapping to a new row */
+  gap: 20px; /* Optional: Adds consistent spacing between items */
   margin: 40px 0;
 }
 
@@ -449,12 +425,9 @@ team
 
 .team-member h3 {
   margin-top: 15px;
-  font-size: 1.5em;
 }
 
 .team-member p {
-  font-size: 1.1em;
-  color: #555; /* Slightly dimmed text color */
 }
 
 /* Add a hover effect on the images */
@@ -490,20 +463,15 @@ team
 }
 
 .bio-details h2 {
-  font-size: 2em;
   margin-bottom: 10px;
 }
 
 .bio-details h4 {
-  font-size: 1.5em;
   margin-bottom: 20px;
-  color: #666; /* Slightly dimmed color for the position */
 }
 
 .bio-details p {
-  font-size: 1.1em;
   line-height: 1.6;
-  color: #333;
   margin-bottom: 15px;
 }
 
@@ -576,11 +544,9 @@ process
 
 .wider-three-part-section h3 {
   margin-bottom: 10px;
-  font-size: 1.5em; /* Adjust as needed */
 }
 
 .wider-three-part-section p {
-  font-size: 1em; /* Adjust as needed */
   line-height: 1.6;
 }
 
@@ -598,7 +564,6 @@ process
   color: white;
   text-align: center;
   text-decoration: none;
-  font-size: 16px;
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
@@ -635,7 +600,6 @@ press
 }
 
 .excerpt-intro p {
-  font-size: 18px; /* Adjust as needed */
   line-height: 1.6;
   margin: 0;
 }
@@ -667,7 +631,6 @@ press
 }
 
 .excerpt-section .text p {
-  font-size: 16px; /* Adjust as needed */
   line-height: 1.6;
 }
 
@@ -701,22 +664,29 @@ work
 }
 
 .intro-section h2 {
-  font-size: 36px;
-  font-weight: bold;
-  color: #333;
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
   position: relative;
   display: inline-block;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #729bbf;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px; /* Space between text and line */
+  font-weight: bold; /* Makes the text bold */
 }
 
+.intro-section h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%; /* Start at the center */
+  transform: translateX(-50%); /* Shift left by half of its width */
+  width: 120%; /* Make the underline longer than the text */
+  height: 2px;
+  background-color: #729bbf;
+}
+
+
 .intro-section p {
-  font-size: 16px;
-  color: #666;
+
 }
 
 
@@ -761,13 +731,10 @@ work
 }
 
 .product-title {
-  font-size: 24px;
-  font-weight: bold;
   margin-bottom: 20px;
 }
 
 .product-summary {
-  font-size: 16px;
   margin-bottom: 20px;
 }
 
@@ -777,7 +744,6 @@ work
 }
 
 .product-description li {
-  font-size: 16px;
   margin-bottom: 10px;
 }
 
@@ -815,16 +781,13 @@ work
 }
 
 .coming-soon-section h2 {
-  font-size: 32px; /* Larger heading */
-  color: #333; /* Darker color for emphasis */
   margin-bottom: 20px;
 }
 
 .coming-soon-list {
   list-style: none; /* Remove default bullet points */
   padding: 0;
-  font-size: 18px;
-  color: #555; /* Slightly lighter text for a subtle look */
+
 }
 
 .coming-soon-list li {
@@ -832,7 +795,7 @@ work
 }
 
 .coming-soon-list strong {
-  color: #729bbf; /* Use the primary color for emphasis */
+
 }
 
 
@@ -857,14 +820,22 @@ connect
 }
 
 .contact-info p {
-  font-size: 14px; /* Smaller text */
   margin-bottom: 10px;
   line-height: 1.5;
 }
 
+.contact-info a {
+  color: black; /* Set the text color to black */
+  text-decoration: none; /* Remove the underline from links */
+}
+
+.contact-info a:hover {
+  text-decoration: underline; /* Optional: Add underline on hover */
+}
+
 .contact-info strong {
   font-weight: bold; /* Bold for the labels */
-  color: #333; /* Dark color for contrast */
+
 }
 
 /* Info Section */
@@ -1075,7 +1046,6 @@ responsive
   }
 
   .section-text {
-    font-size: 14px; /* Adjust font size for readability */
     text-align: center; /* Center text */
   }
 
@@ -1103,7 +1073,7 @@ responsive
   }
 
   .part h3 {
-    font-size: 18px; /* Adjust heading size */
+
   }
 
   .part p {
@@ -1117,7 +1087,7 @@ responsive
   }
 
   .closing-section p {
-    font-size: 20px; /* Adjust font size */
+
   }
 
   /* Subscribe Section */
@@ -1127,7 +1097,7 @@ responsive
   }
 
   .subscribe-section p {
-    font-size: 14px; /* Adjust font size */
+
   }
 
   .subscribe-form input {
@@ -1197,11 +1167,9 @@ responsive
   }
 
   .wider-three-part-section h3 {
-    font-size: 1.2em; /* Adjust heading font size */
   }
 
   .wider-three-part-section p {
-    font-size: 0.9em; /* Adjust paragraph font size */
   }
 
 
@@ -1217,7 +1185,7 @@ responsive
     }  
 
       .regal-difference p, .elevate-lifestyle p, .contact-info p {
-    font-size: 1em; /* Adjust font size for smaller screens */
+
     padding: 10px; /* Adjust padding for smaller screens */
   }
 
@@ -1255,13 +1223,11 @@ responsive
 
 /* Regal Difference and Elevate Lifestyle sections */
 .regal-difference, .elevate-lifestyle {
-  font-size: 1em; /* Adjust font size for smaller screens */
   padding: 15px; /* Reduced padding */
 }
 
 /* Contact Information section */
 .contact-info {
-  font-size: 0.9em; /* Slightly smaller font size */
   padding: 15px; /* Reduced padding */
 }
 
@@ -1299,7 +1265,7 @@ responsive
   }
   
   .info-section h2 {
-      font-size: 16px; /* Adjust text size for mobile */
+     
   }
 }
 
@@ -1310,7 +1276,7 @@ responsive
   }
 
   .contact-info p {
-      font-size: 13px; /* Slightly smaller text on mobile */
+    
   }
 }
 
