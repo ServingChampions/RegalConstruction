@@ -1295,11 +1295,18 @@ responsive
   .product-carousel,
   .product-details {
     max-width: 100%;
-    margin: 0 auto 20px;
+    margißn: 0 auto 20px;
   }
 
   .product-carousel {
     margin-right: 0;
     margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1132px) {
+  .cover-photo img {
+    height: 600px; /* Forces a specific height on desktop */
+    object-position: center 40%; /* Adjust this percentage to move the focal point up or down */
   }
 }
